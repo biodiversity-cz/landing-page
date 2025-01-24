@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{ifset $platform} |! {$platform} || {/ifset} {ifset $title}{$title} | {/ifset} TBD</title>
+    <meta name="description" n:ifset="#description" content="{include #description}">
+    <meta name="keywords" n:ifset="#keywords" content="{include #keywords}">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="snippet,archive">
+
+    <link href="{$basePath}/dist/app.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+
+</header>
+<main class="content">
+    <div class="container">
+        <div class="col-sm-12">
+            <div n:foreach="$flashes as $flash" n:class="alert, $flash->type">{$flash->message}</div>
+        </div>
+    </div>
+    <div class="container">
+        {include content}
+    </div>
+</main>
+{/block}
+<footer>
+    <div class="container">
+        <hr>
+
+    </div>
+</footer>
+</body>
+<script src="{$basePath}/dist/app.js"></script>
+</html>
+

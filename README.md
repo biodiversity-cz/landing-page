@@ -1,2 +1,2 @@
 # landing-page
-Landing page, biodiversity.cz
+Landing page => biodiversity.cz
