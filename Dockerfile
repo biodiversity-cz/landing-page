@@ -1,10 +1,8 @@
-FROM ghcr.io/krkabol/php-fpm-noroot-socket:main@sha256:08706b27cc6adce77c2d82eaf740872c705fd14a4b31ef86955c1cdf35cb20a4
+FROM ghcr.io/biodiversity-cz/php-fpm-noroot-socket:main@sha256-5f6b5d89f58aa062263cfe8acb4c2dd0044fa4a0a6d84fb6243b0e247ca59e0e
 LABEL org.opencontainers.image.source=https://github.com/biodiversity-cz/landing-page
 LABEL org.opencontainers.image.description="Landing page for biodiversity.cz"
 ARG GIT_TAG
 ENV GIT_TAG=$GIT_TAG
-
-RUN docker-php-ext-install intl
 
 # devoted for Kubernetes, where the app has to be copied into final destination (/app) after the container starts
 COPY  --chown=www:www htdocs /app
