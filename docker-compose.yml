@@ -1,0 +1,21 @@
+services:
+    nginx:
+        image: ghcr.io/krkabol/nginx-noroot-fpmsocket:v0.1
+        depends_on:
+            - php-fpm
+        ports:
+            - 80:8080
+        volumes:
+            - ./htdocs:/srv/
+            - socket:/sock
+
+    php-fpm:
+        image: ghcr.io/krkabol/php-fpm-noroot-socket:main
+        environment:
+            NETTE_ENV: "development"
+        volumes:
+            - ./htdocs:/srv
+            - socket:/sock
+
+volumes:
+    socket:
