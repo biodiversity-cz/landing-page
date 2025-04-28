@@ -5,7 +5,7 @@
 header.masthead {
     position: relative;
     background-color: $gray-800;
-    background: url('../../img/bg-masthead.webp') no-repeat center center;
+    background: url('../../img/head.png') no-repeat center center;
     background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -18,11 +18,14 @@ header.masthead {
         width: 100%;
         top: 0;
         left: 0;
-        opacity: 0.5;
+        opacity: 0.4;
     }
 
     h1 {
         font-size: 2rem;
+        background-color: mix($gray-900, #008800, 75%);
+        opacity: 0.8;
+        padding: 1rem 4rem 1rem 4rem;
     }
 
     @media (min-width: 768px) {

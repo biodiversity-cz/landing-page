@@ -16,17 +16,16 @@
 
 <body>
 <nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Biodiversity.CZ</a>
-    </div>
+    <img src="{$basePath}/images/ENG_CZ_eosc-logo-barevne.svg" style="max-width: 500px" alt="Logo">
 </nav>
 <header class="masthead">
     <div class="container position-relative">
         <div class="row justify-content-center">
-            <div class="col-xl-8">
+            <div class="col-xl-12">
                 <div class="text-center text-white">
                     <!-- Page heading-->
-                    <h1 class="mb-5">Digital repositories and services for the <span class="text-capitalize" style="font-variant: small-caps;">biodiversity research</span> in the Czech Republic</h1>
+                    <h1 class="mb-5">Digital repositories and services for biodiversity research in the Czech Republic <br> <span class="fs-3 fst-italic">Preserving, studying and delivering biodiversity data of worldwide importance</span> </h1>
+
                 </div>
             </div>
         </div>
@@ -38,21 +37,20 @@
         <section class="features-icons bg-light text-center">
             <div class="container">
                 <div class="row">
-                    <p class="lead mb-5">Our goal is to create an ecosystem of specialized repositories, services and software integrations that will create a national base for sharing biodiversity data in the Czech Republic.
-                        Pilot implementation is underway within the EOSC Environmental Sciences Working Group [link] of the OS I - National Repository Platform[link] project and further development is planned within the OS II project. </p>
+                    <p class="lead mb-5">Ecosystem of specialized repositories, services and software integrations that will serve as a national base for sharing biodiversity data in the Czech Republic.
+                        Pilot implementation is underway within the <a href="https://www.eosc.cz/en/working-groups/environmental-sciences">EOSC Environmental Sciences Working Group</a> of the <a href="https://www.eosc.cz/en/projects/national-repository-platform-for-research-data-os-i-nrp/national-repository-platform">National Repository Platform for Research Data (OS I NRP)</a> project and further development is planned within the OS II project. </p>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <img src="https://cdn.muni.cz/media/3496758/logo-eosc.png?width=168&amp;upscale=false" alt="EOSC" title="EOSC" class="mb-5">
+                            <img src="{$basePath}/images/ENG_CZ_eosc-logo-barevne.svg" alt="EOSC" title="EOSC" class="mb-5">
                             <p class="lead mb-0">Integrated in the National Repository Platform (NRP) of the EOSC.CZ</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <img class="img-fluid rounded-circle mb-1" src="{$basePath}/images/PrFUK_soutisk_digital_ENG.png" alt="..." />
-
-                            <p class="lead mb-0">Developed and maintained by a team of researchers and developers from the Faculty of Science, Charles University, Prague</p>
+                            <i class="fa-solid fa-people-arrows m-auto text-secondary" style="font-size: 4.5rem"></i>
+                            <p class="lead mb-0 mt-5">Developed and maintained by a team of the Czech DiSSCo consortium</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -69,63 +67,66 @@
         <section class="showcase">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://api.gbif.org/v1/image/upb01LqX5E64oezYotqftakzC84=/fit-in/500x0/https%3A%2F%2Fhp-herbarium-germany.gbif.org%2Fassets%2Fimages%2FScannTech.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{$basePath}/images/herbarium.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Herbarium scans JACQ CZ</h2>
-                        <p class="lead mb-0">Based on the National repository platform</p>
-                        <p><a href="https://herbarium.dyn.cloud.e-infra.cz/">Pilot of the repository</a> obrázky jako mají na  https://herbarium.gbif.de/ </p>
+                        <h2>Herbarium (Plant and Fungal) Collections' Images</h2>
+                        <p class="lead mb-0">TBD</p>
+                        <p><a href="https://herbarium.dyn.cloud.e-infra.cz/">Pilot of the repository</a> </p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('https://www.researchgate.net/profile/Guillermo-Delia/publication/333405253/figure/fig3/AS:849379808268288@1579519335112/Lateral-view-of-skulls-of-selected-rodent-species-with-the-area-of-insertion-of-the.ppm')"></div>
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('{$basePath}/images/genbank.jpg')"></div>
                     <div class="col-lg-6 my-auto showcase-text">
                         <h2>Zoological collections</h2>
-                        <p class="lead mb-0"><tbd></tbd></p>
+                        <p class="lead mb-0">TBD</p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://images.fineartamerica.com/images-medium-large-5/1-gene-bank-tubes-containing-all-human-genes-klaus-guldbrandsenscience-photo-library.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{$basePath}/images/gene.png')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Gene banks</h2>
-                        <p class="lead mb-0">TBD</p>
+                        <h2>Genetic banks</h2>
+                        <p class="lead mb-0">TBD
+
+
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="testimonials text-center bg-light">
+        <section class="testimonials bg-light">
             <div class="container">
-                <h2 class="mb-5">Acknowledgement & Partners</h2>
-                <div class="row text-center">
+<!--                <h2 class="mb-5">Acknowledgement & Partners</h2>-->
+                <div class="row">
                     <img src="https://cdn.muni.cz/media/3526850/eu-msmt-barevne-aj.svg?mode=crop&amp;center=0.5,0.5&amp;rnd=133276035320000000" alt="..." class="mx-auto d-block" style="height: 83px; width: 575px;">
-<hr class="mt-2">
+<!--<hr class="mt-2">-->
                 </div>
-                <div class="row d-flex align-items-center">
-                     <div class="col">
-                         <img src="https://cdn.muni.cz/media/3438500/e-infra-cz.png?width=200&amp;upscale=false" alt="e-infra" title="e-infra" class="img-fluid">
-                     </div>
-                    <div class="col">
-                        <img src="https://cdn.muni.cz/media/3496758/logo-eosc.png?width=168&amp;upscale=false" alt="EOSC" title="EOSC" class="img-fluid">
-                    </div>
-                    <div class="col">
-                        <img src="https://cdn.muni.cz/media/3490476/cesnet_rgb.png?width=200&amp;upscale=false" alt="Cesnet" title="Cesnet" class="img-fluid">
-                    </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                </div>
-                <div class="row text-center">
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                </div>
-                <div class="row text-center">
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                </div>
+<!--                <div class="row d-flex align-items-center">-->
+<!--                     <div class="col">-->
+<!--                         <img src="https://cdn.muni.cz/media/3438500/e-infra-cz.png?width=200&amp;upscale=false" alt="e-infra" title="e-infra" class="img-fluid">-->
+<!--                     </div>-->
+<!--                    <div class="col">-->
+<!--                        <img src="https://cdn.muni.cz/media/3496758/logo-eosc.png?width=168&amp;upscale=false" alt="EOSC" title="EOSC" class="img-fluid">-->
+<!--                    </div>-->
+<!--                    <div class="col">-->
+<!--                        <img src="https://cdn.muni.cz/media/3490476/cesnet_rgb.png?width=200&amp;upscale=false" alt="Cesnet" title="Cesnet" class="img-fluid">-->
+<!--                    </div>-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                </div>-->
+<!--                <div class="row text-center">-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                </div>-->
+<!--                <div class="row text-center">-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                    <div class="col"></div>-->
+<!--                </div>-->
 <!--                <div class="row">-->
 <!--                    <div class="col-lg-4">-->
 <!--                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">-->
@@ -153,37 +154,37 @@
             </div>
         </section>
 
-<footer class="footer bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
-                <ul class="list-inline mb-2">
-                    <li class="list-inline-item"><a href="#!">About</a></li>
-                    <li class="list-inline-item">⋅</li>
-                    <li class="list-inline-item"><a href="#!">Contact</a></li>
-                    <li class="list-inline-item">⋅</li>
-                    <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-                    <li class="list-inline-item">⋅</li>
-                    <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
-                </ul>
-                <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
-            </div>
-<!--            <div class="col-lg-6 h-100 text-center text-lg-end my-auto">-->
-<!--                <ul class="list-inline mb-0">-->
-<!--                    <li class="list-inline-item me-4">-->
-<!--                        <a href="#!"><i class="bi-facebook fs-3"></i></a>-->
-<!--                    </li>-->
-<!--                    <li class="list-inline-item me-4">-->
-<!--                        <a href="#!"><i class="bi-twitter fs-3"></i></a>-->
-<!--                    </li>-->
-<!--                    <li class="list-inline-item">-->
-<!--                        <a href="#!"><i class="bi-instagram fs-3"></i></a>-->
-<!--                    </li>-->
+<!--<footer class="footer bg-light">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6 h-100 text-center text-lg-start my-auto">-->
+<!--                <ul class="list-inline mb-2">-->
+<!--                    <li class="list-inline-item"><a href="#!">About</a></li>-->
+<!--                    <li class="list-inline-item">⋅</li>-->
+<!--                    <li class="list-inline-item"><a href="#!">Contact</a></li>-->
+<!--                    <li class="list-inline-item">⋅</li>-->
+<!--                    <li class="list-inline-item"><a href="#!">Terms of Use</a></li>-->
+<!--                    <li class="list-inline-item">⋅</li>-->
+<!--                    <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>-->
 <!--                </ul>-->
+<!--                <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>-->
 <!--            </div>-->
-        </div>
-    </div>
-</footer>
+<!--&lt;!&ndash;            <div class="col-lg-6 h-100 text-center text-lg-end my-auto">&ndash;&gt;-->
+<!--&lt;!&ndash;                <ul class="list-inline mb-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="list-inline-item me-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a href="#!"><i class="bi-facebook fs-3"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="list-inline-item me-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a href="#!"><i class="bi-twitter fs-3"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="list-inline-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a href="#!"><i class="bi-instagram fs-3"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 </body>
 <script src="{$basePath}/dist/app.js"></script>
 </html>
