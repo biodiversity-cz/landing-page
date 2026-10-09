@@ -1,4 +1,4 @@
-FROM ghcr.io/biodiversity-cz/php-fpm-noroot-socket:main@sha256:5f6b5d89f58aa062263cfe8acb4c2dd0044fa4a0a6d84fb6243b0e247ca59e0e
+FROM ghcr.io/biodiversity-cz/php-fpm-noroot-socket:main@sha256:fb841c0a11d204046b7d4ac0ae2bc4799836942dfb2b8cdce1efb6deda6c8da3
 LABEL org.opencontainers.image.source=https://github.com/biodiversity-cz/landing-page
 LABEL org.opencontainers.image.description="Landing page for biodiversity.cz"
 ARG GIT_TAG
